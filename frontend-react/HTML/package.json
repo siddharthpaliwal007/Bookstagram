@@ -1,0 +1,33 @@
+{
+    "name": "BookstagramINC",
+    "version": "1.0.0",
+    "description": "Bootstrap 4 Admin Dashboard",
+    "main": "gulpfile.js",
+    "scripts": {
+        "start": "live-server",
+        "sass": "node-sass --watch src/scss/main.scss src/css/style.css --source-map src/css/style.css.map"
+    },
+    "author": "BookstagramINC",
+    "design": "BookstagramINC",
+    "authorTfUrl": "https://themeforest.net/user/BookstagramINC",
+    "authorUrl": "https://BookstagramINC.io",
+    "license": "ISC",
+    "email": "BookstagramINC.com@gmail.com",
+    "skype": "sporsho9",
+    "devDependencies": {},
+    "dependencies": {
+        "animate.css": "^3.7.2",
+        "bootstrap": "^5.0.0-alpha2",
+        "jquery": "^3.5.1",
+        "node-sass": "^4.14.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BookstagramINC/BookstagramINC.git"
+    },
+    "bugs": {
+        "url": "https://github.com/BookstagramINC/BookstagramINC/issues"
+    },
+    "homepage": "https://github.com/BookstagramINC/BookstagramINC#readme"
+}
+

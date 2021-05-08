@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <script src="https://cdn.jsdelivr.net/gh/deltoss/d3-mitch-tree@1.0.2/dist/js/d3-mitch-tree.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/deltoss/d3-mitch-tree@1.0.2/dist/css/d3-mitch-tree.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/deltoss/d3-mitch-tree@1.0.2/dist/css/d3-mitch-tree-theme-default.min.css">
+    </head>
+    <body>
+        <section id="visualisation">
+        </section>
+        
+        <script>
+            var data = [
+                {
+                    "id": 1,
+                    "name": "Root User",
+                    "type": "Root",
+                    "description": "Root User"
+                },
+                {
+                    "id": 2,
+                    "parentId": 1,
+                    "name": "User 1",
+                    "type": "Type",
+                    "description": "User 1 profile link"
+                },
+                {
+                    "id": 3,
+                    "parentId": 2,
+                    "name": "User 3",
+                    "type": "User 1 referal",
+                    "description": "User 3 bought the book"
+                },
+                {
+                    "id": 4,
+                    "parentId": 2,
+                    "name": "User 4",
+                    "type": "User 1 referal",
+                    "description": "User 4 bought the book"
+                },
+                {
+                    "id": 5,
+                    "parentId": 2,
+                    "name": "User 5",
+                    "type": "User 1 referal",
+                    "description": "User 4 bought the book"
+                },
+                {
+                    "id": 6,
+                    "parentId": 1,
+                    "name": "User 2",
+                    "type": "Type",
+                    "description": "User 2 profile link"
+                },
+                {
+                    "id": 7,
+                    "parentId": 6,
+                    "name": "User 6",
+                    "type": "User 2 referral",
+                    "description": "User 6 has bought the book"
+                },
+                {
+                    "id": 8,
+                    "parentId": 6,
+                    "name": "User 7",
+                    "type": "User 2 referral",
+                    "description": "User 7 has bought the book" }
+            ];
+
+            var treePlugin = new d3.mitchTree.boxedTree()
+                .setIsFlatData(true)
+                .setData(data)
+                .setElement(document.getElementById("visualisation"))
+                .setIdAccessor(function(data) {
+                    return data.id;
+                })
+                .setParentIdAccessor(function(data) {
+                    return data.parentId;
+                })
+                .setBodyDisplayTextAccessor(function(data) {
+                    return data.description;
+                })
+                .setTitleDisplayTextAccessor(function(data) {
+                    return data.name;
+                })
+                .initialize();
+        </script>
+    </body>
+</html>

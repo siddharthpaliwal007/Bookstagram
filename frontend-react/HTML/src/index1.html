@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookstagram</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="20x20" href="./images/favicon.png">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./vendor/slick/slick.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./vendor/slick/slick-theme.css" /> -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div id="preloader"><i>.</i><i>.</i><i>.</i></div>
+
+    <div id="main-wrapper">
+
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12">
+                        <div class="header-content">
+                            <div class="header-left">
+                                <div class="brand-logo">
+                                    <a href="intro.html">
+                                        <span><img src="./images/logo.png" alt="" height="50px" width="100px"></span>
+                                        <span align="center" style="line-height: 1.5em;">Bookstagram</span>
+                                    </a>
+                                </div>
+                                <div class="search">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search Here">
+                                            <span class="input-group-text"><i class="icofont-search"></i></span>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+
+                            <div class="header-right">
+                                <div class="dark-light-toggle" onclick="themeToggle()">
+                                    <span class="dark"><i class="icofont-moon"></i></span>
+                                    <span class="light"><i class="icofont-sun-alt"></i></span>
+                                </div>
+                                <div class="notification dropdown">
+                                    <div class="notify-bell" data-toggle="dropdown">
+                                        <span><i class="icofont-alarm"></i></span>
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right notification-list">
+                                        <h4>Announcements</h4>
+                                        <div class="lists">
+                                            <a href="#" class="">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="mr-3 icon success"><i class="icofont-check"></i></span>
+                                                    <div>
+                                                        <p>Account created successfully</p>
+                                                        <span>2020-11-04 12:00:23</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="mr-3 icon fail"><i class="icofont-close"></i></span>
+                                                    <div>
+                                                        <p>2FA verification failed</p>
+                                                        <span>2020-11-04 12:00:23</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="mr-3 icon success"><i class="icofont-check"></i></span>
+                                                    <div>
+                                                        <p>Device confirmation completed</p>
+                                                        <span>2020-11-04 12:00:23</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="">
+                                                <div class="d-flex align-items-center">
+                                                    <span class="mr-3 icon pending"><i
+                                                            class="icofont-warning"></i></span>
+                                                    <div>
+                                                        <p>Phone verification pending</p>
+                                                        <span>2020-11-04 12:00:23</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+
+                                            <a href="./settings-activity.html">More <i
+                                                    class="icofont-simple-right"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="profile_log dropdown">
+                                    <div class="user" data-toggle="dropdown">
+                                        <span class="thumb"><img src="./images/profile/2.png" alt=""></span>
+                                        <span class="arrow"><i class="icofont-angle-down"></i></span>
+                                    </div>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <div class="user-email">
+                                            <div class="user">
+                                                <span class="thumb"><img src="./images/profile/2.png" alt=""></span>
+                                                <div class="user-info">
+                                                    <h5>Dishant Shah</h5>
+                                                    <span>Rhodium.inc@gmail.com</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="user-balance">
+                                            <div class="available">
+                                                <p>Available</p>
+                                                <span>0.00 BTC</span>
+                                            </div>
+                                            <div class="total">
+                                                <p>Total</p>
+                                                <span>0.00 USD</span>
+                                            </div>
+                                        </div>
+                                        <a href="profile.html" class="dropdown-item">
+                                            <i class="icofont-ui-user"></i>Profile
+                                        </a>
+                                        <a href="wallet.html" class="dropdown-item">
+                                            <i class="icofont-wallet"></i>Wallet
+                                        </a>
+                                        <a href="settings-profile.html" class="dropdown-item">
+                                            <i class="icofont-ui-settings"></i> Setting
+                                        </a>
+                                        <a href="settings-activity.html" class="dropdown-item">
+                                            <i class="icofont-history"></i> Activity
+                                        </a>
+                                        <a href="lock.html" class="dropdown-item">
+                                            <i class="icofont-lock"></i>Lock
+                                        </a>
+                                        <a href="signin.html" class="dropdown-item logout">
+                                            <i class="icofont-logout"></i> Logout
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="brand-logo">
+                <a href="index.html"><img src="./images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index1.html" data-toggle="tooltip" data-placement="right" title="Home">
+                            <span><i class="icofont-ui-home"></i></span>
+                        </a>
+                    </li>
+                    <li><a href="bookshelf.html" data-toggle="tooltip" data-placement="right" title="My Books">
+                            <span><i class="icofont-book"></i></i></span>
+                        </a>
+                    </li>
+                    <li><a href="TBD.html" data-toggle="tooltip" data-placement="right" title="Wallet">
+                            <span><i class="icofont-wallet"></i></span>
+                        </a>
+                    </li>
+                    <li><a href="TBD.html" data-toggle="tooltip" data-placement="right" title="Friends">
+                        <span> <i class="icofont-group"> </i></span>
+                        </a>
+                    </li>
+                    <li class="logout"><a href="signin.html" data-toggle="tooltip" data-placement="right"
+                            title="Signout">
+                            <span><i class="icofont-power"></i></span>
+                        </a>
+                    </li>
+                </ul>
+
+                <p class="copyright">
+                    &#169; <a href="#">Bookstagram</a><br>
+                    <a href="#">INC</a>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="content-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="invite-content">
+                                    <h4>Invite a friend and get $30</h4>
+                                    <p>You will receive up to $30 when they sign up with your invite link <br>
+
+                                    </p>
+
+                                    <div class="copy-link">
+                                        <form action="#">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control"
+                                                    value="https://www.bookstagram.io/join/12345">
+                                                <span class="input-group-text">Copy</span>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <!-- <div class="social-share-link">
+                                        <a href="#"><span><i class="icofont-facebook"></i></span></a>
+                                        <a href="#"><span><i class="icofont-twitter"></i></span></a>
+                                        <a href="#"><span><i class="icofont-whatsapp"></i></span></a>
+                                        <a href="#"><span><i class="icofont-telegram"></i></span></a>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="invite-content">
+                                    <h4>Get commisions every day</h4>
+                                    <p>You can receive money when your friends buys book from you</p>
+
+                                    <a href="#" class="btn btn-primary">Add Friends</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-6 col-lg-6">
+                        <div class="card welcome-profile">
+                            <div class="card-body">
+                                <img src="./images/profile/2.png" alt="">
+                                <h4>Welcome, Dishant Shah!</h4>
+                                <p>Looks like you are not verified yet. Verify yourself to use the full potential of
+                                    Bookstagram.</p>
+
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <span class="verified"><i class="icofont-check-alt"></i></span>
+                                            Verify account
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-4 col-xl-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title">BookShelves</h4>
+                            </div>
+                            <div class="card-body">
+                                <ul class="balance-widget position-value">
+                                    <li>
+                                        <h5>Wanting to Read</h5>
+                                        <div class="text-right">
+                                            <h5>1</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5>Currently Reading</h5>
+                                        <div class="text-right">
+                                            <h5>2</h5>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <h5>Read</h5>
+                                        <div class="text-right">
+                                            <h5>5</h5>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./vendor/jquery/jquery.min.js"></script>
+    <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="./vendor/basic-table/jquery.basictable.min.js"></script>
+    <script src="./js/plugins/basic-table-init.js"></script>
+
+
+    <script src="./vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="./js/plugins/perfect-scrollbar-init.js"></script>
+
+    <script src="./vendor/apexchart/apexcharts.min.js"></script>
+    <script src="./js/dashboard.js"></script>
+    <script src="./js/plugins/apex-price.js"></script>
+
+    <script src="./vendor/slick/slick.min.js"></script>
+    <script src="./js/plugins/slick-init.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</body>
+
+</html>

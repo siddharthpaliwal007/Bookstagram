@@ -1,0 +1,350 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bookstagram</title>
+
+<link href="css/bookliststyle.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
+<link rel="stylesheet" type="text/css"  href="css/topfooter.css"  />
+
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+<script src="./vendor/jquery/jquery.min.js"></script>
+<script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="./vendor/basic-table/jquery.basictable.min.js"></script>
+<script src="./js/plugins/basic-table-init.js"></script>
+
+
+<script src="./vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="./js/plugins/perfect-scrollbar-init.js"></script>
+
+<script src="./vendor/apexchart/apexcharts.min.js"></script>
+<script src="./js/dashboard.js"></script>
+<script src="./js/plugins/apex-price.js"></script>
+
+<script src="./vendor/slick/slick.min.js"></script>
+<script src="./js/plugins/slick-init.js"></script>
+<script src="./js/scripts.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script src="js/modernizr-custom.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+
+
+<!--------------Slider Section Start------------------->
+<!-- <section id="slider" class="float_l">
+
+    
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for release -->
+    <!-- <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options); -->
+            
+            <!-- //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1930);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script> -->
+
+    <!-- <style>
+        
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('images/slider/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('images/slider/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+    </style> -->
+
+    
+
+    <!-- <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden; visibility: hidden;"> -->
+        <!-- Loading Screen -->
+        <!-- <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('images/slider/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div> -->
+        <!-- <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/slider/Banner1.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/slider/Banner2.jpg" />
+            </div>
+            <div data-p="225.00" style="display: none;">
+                <img data-u="image" src="images/slider/Banner3.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <!-- <div data-u="navigator" class="jssorb05" style="bottom:16px;right:6px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <!-- <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div> --> -->
+        <!-- Arrow Navigator -->
+        <!-- <span data-u="arrowleft" class="jssora22l" style="top:123px;left:12px;width:40px;height:58px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora22r" style="top:123px;right:12px;width:40px;height:58px;" data-autocenter="2"></span>
+
+    </div> -->
+     
+<!--    
+</section> -->
+<!--------------Slider Section Over------------------->
+
+
+
+
+<heading>
+<h1 class="float_l"><img src="images/dot.png" class="dot"/>WELCOME TO <span style="padding:5px 5px;">BOOKSTAGRAM,</span> CHECK OUT OUR LATEST BOOKS</h1>
+</heading>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <div class="content float_l">
+                <div class="music_box float_l">
+                    <img src="images/cd_icon.png" class="float_l" />
+                    <h2 class="float_l">AUDIO PODCASTS</h2>
+                    <P class="desc float_l">Bookstagram lauches new experiance with audio blogging and story podcasts</P>
+                </div>
+                
+                <div class="music_box float_l" style="background-color:#fcc508;margin:0px 30px;color:#cc3333">
+                <img src="images/audio_icon.png" class="float_l" />
+                    <h2 class="float_l">LISTEN BEFORE PURCHASE</h2>
+                    <P class="desc float_l">Listen to the previews before you buy</P>
+                </div>
+                
+                
+                <div class="music_box float_l">
+                <img src="images/upcoming_event_icon.png" class="float_l" />
+                    <h2 class="float_l">AUTHOR SCREENS</h2>
+                    <P class="desc float_l">Launching on 5th April 2021,Author's insightful and interactive user experience</P>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+<!--=========== Main Content Start===============-->
+    <div class="row">
+        <div class="col-sm-9">
+            <div class="maincontent float_l">
+                <h3>LATEST ARRIVALS IN BOOKSTAGRAM
+                <div class="arrow">
+                    <a style="color: blue;font-size:15px;"href="book-gallery.html">More>></a>
+                </div></h3>
+                     <div class="box1 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="bookdescription.html"><img src="images/img1.png"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">The CEO Factory</a> &nbsp;&nbsp;<i><small><a href="#">by Sudhir Sitapati</a></small></i></h4>
+                        <p><b>Management Lessons:</b> Management Lessons from Hindustan Uniliver Ltd</p>
+                        <p>$ 14.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+                  <div class="box1 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><img src="images/img2.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Wings Of Fire</a> &nbsp;&nbsp;<i><small><a href="#">by Arun Tiwari</a></small></i></h4>
+                      <p><b>Autobiography:</b>Dr. Kalam examines his early life, effort, hardship, fortitude, luck and chance that eventually led him to lead Indian space research, nuclear and missile programs</p>
+                        <p>$ 17.59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+                  <div class="box1 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><img src="images/img3.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">India's greatest short stories</a> &nbsp;&nbsp;<i><small><a href="#">by khushwant singh</a></small></i></h4>
+                      <p><b>Fiction:</b> Khushwant Singh, the country's foremost literary figure, serves up another volume of the finest fiction from across India.</p>
+                        <p>$ 17.59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+                 <div class="box4 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><img src="images/img4.png"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Sathyajit Ray</a> &nbsp;&nbsp;<i><small><a href="#">by SR</a></small></i></h4>
+                      <p><b>Fiction: </b>The best short stories of Satyajit Ray Best known for his immensely popular Feluda mysteries and the adventures of Professor Shonku, Satyajit Ray was also one of the most skilful short story writers of his generation</p>
+                        <p>$ 17.59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+        </div>
+        </div>
+        
+    </div>
+    <!--=========== Main Content Second===============--> 
+    <div class = "row">
+        <div class="col-sm-9">
+            <div class="maincontent float_l">
+                <h3>ALBUMS CURRENTLY ON SALE
+                <div class="arrow">
+                    <a style="color: blue;font-size:15px;"href="book-gallery.html">More>></a></div></h3>
+                
+                <div class="box1 float_l">
+                        <div class="arrival_img" style="background-color:rgb(255,255,255);"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><div class="sale">SALE</div><img src="images/img5.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Periyar</a> &nbsp;&nbsp;<i><small><a href="#">by R.Muthukumar</a></small></i></h4>
+                      <span class="rating"><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_black.png" /></span>
+                        <p><b>Autobiography: </b> Erode Venkatappa Ramasamy, commonly known as Periyar or Thanthai Periyar, was an Indian social activist and politician who started the Self-Respect Movement and Dravidar Kazhagam</p>
+                        <p>$ 14.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+               <div class="box1 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><div class="sale">SALE</div><img src="images/img6.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Death on the nile</a> &nbsp;&nbsp;<i><small><a href="#">by Agatha Christi</a></small></i></h4>
+                      <span class="rating"><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_black.png" /></span>
+                        <p><b>Fiction </b>Detective Hercule Poirot investigates the murder of a young heiress aboard a cruise ship on the Nile River.</p>
+                        <p>$ 14.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+              <div class="box1 float_l">
+                        <div class="arrival_img" style="background-color:rgb(255,255,255);"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><div class="sale">SALE</div><img src="images/img7.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Sherloack Holmes</a> &nbsp;&nbsp;<i><small><a href="#">by Aur De Ceano</a></small></i></h4>
+                      <span class="rating"><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_black.png" /></span>
+                        <p><b>Thriller: </b> dolor sit amet, con
+        adipiscing elit, sed diam nonu.</p>
+                        <p>$ 14.99&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+                    
+              <div class="box4 float_l">
+                        <div class="arrival_img"><div class="arrival_imgcard"><a href="Mens-Product-Detail-Page.html"><div class="sale">SALE</div><img src="images/img8.png" width="226" height="228"/></a></div></div>
+                      <h4>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">Unfinished</a> &nbsp;&nbsp;<i><small><a href="#">by PC Jonas</a></small></i></h4>
+                      <span class="rating"><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_red.png" /><img src="images/star_black.png" /></span>
+                        <p><b>Bio: </b> Unfinished is a 2021 memoir by Indian actress Priyanka Chopra. Described as a "collection of personal essays, stories and observations", the book chronicles important moments in Chopra's life and her twenty-year-long career, such as working as an actress-producer and UNICEF Goodwill Ambassador. </p>
+                        <p>$ 17.59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Mens-Product-Detail-Page.html">ADD TO CART</a></p>
+                    </div>
+        </div>
+        
+        <!--=========== Main Content End===============--> 
+        </div>
+    </div>
+
+</div> 
+        
+        
+
+   
+
+
+
+
+
+<footer class="float_l">
+	<hr>
+    <div class="footer_fix float_l">
+    	<div class="cols1 float_l">
+    	<h5>About Us</h5>
+    	<p><b>Known by literary lovers as "bookstagram," by tapping the right hashtags, you can end up in a never-ending, magical land where bookworms post the perfect shots of their favorite stories and latest novel recommendations.</p>
+		</div>
+        
+        
+        
+        <div class="cols1 float_l">
+    	<h5>Our Archives</h5>
+    	<li><a href="#">March 2012</a></li>
+        <li class="dotline">.....................................................</li>
+        <li><a href="#">February 2012</a></li>
+        <li class="dotline">.....................................................</li>
+        <li><a href="#">Januuary 2012</a></li>
+        <li class="dotline">.....................................................</li>
+        <li><a href="#">December 2011</a></li>
+    	</div>
+        
+        <div class="cols2 float_l">
+    	<h5 style="margin-bottom:12px;">Popular Posts</h5>
+    	<div class="postimg float_l"><img src="images/footer_img1.png" /><img src="images/footer_img2.png" /></div>
+       	
+        <div class="comment float_l">
+        <h6 style="margin-left:7px; color:#FFF"><a href="#">Awaken The Hero</a></h6>
+        <img src="images/comment_icon.png" /><small style="color:#FFF;position:absolute;margin-top:-23px;margin-left:25px;"><a href="#">12 COMMENTS</a></small></div>	
+        <div class="comment float_l">
+        <h6 style="margin-left:7px; color:#FFF"><a href="#">Bad Dreams</a></h6>
+        <img src="images/comment_icon.png" /><small style="color:#FFF;position:absolute;margin-top:-23px;margin-left:25px;"><a href="#">23 COMMENTS</a></small></div>
+    	</div>
+        
+        
+        <div class="cols3 float_l">
+        <h5>Tag Cloud</h5>
+        <ol class="float_l"><A href="#">Audio podcasts</A></ol><ol class="float_l"><A href="#">Audio</A></ol>
+        <ol class="float_l"><A href="#">Blogging</ol><ol class="float_l"><A href="#">Blogging</A></ol>
+        <ol class="float_l"><A href="#">Storycasts</A></ol>
+        </div>
+        
+    </div>
+    
+    
+    
+
+     
+   
+</footer>
+
+
+</div>
+</body>
+</html>

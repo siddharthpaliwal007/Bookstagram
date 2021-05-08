@@ -1,0 +1,148 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+.mens-gallery{
+	width:986px;
+	height:2400px;
+	background:none !important;
+	margin-left:128px;
+	margin-top:150px;
+	}
+
+.product-title{
+	width:986px;
+	height:70px;
+	}
+
+	.product-title h1{
+		font-size:18px;
+		font-family:myriad pro;
+		}
+
+		.left-side{
+			width:300px;
+			}
+		
+			.left-side .title-detail{
+				margin-top:-15px;
+				margin-left:2px;
+				position:absolute;
+				font-size:11px;
+				}
+			
+					.left-side .title-detail a{
+					color:#000;
+					}
+			
+		.right-side{
+		width:400px;
+		}
+
+		
+		
+		
+		.shortby{
+			width:180px;
+			margin-top:22px;
+			font-size:15px;
+			margin-left:100px;
+			}
+			
+			
+			
+		.viewby{
+			width:100px;
+			margin-top:17px;
+			font-size:15px;
+			line-height:30px;
+			}
+			
+			.viewby img{
+				margin-left:5px;
+				margin-top:6px;
+				}
+	
+.deshed-line{
+	position:absolute;
+	letter-spacing:1px;
+	opacity:0.2;
+	text-align:center;
+	margin-top:60px;
+	}	
+		
+
+
+.product{
+	width:986px;
+	height:1100px;
+	margin-bottom:30px;
+	}
+	
+	.mens-tshirt{
+		width:240px;
+		height:280px;
+		margin:15px 2px 50px;
+		border:1px solid #CCC;
+		}
+	.mens-tshirt:hover{
+		border:1px solid #ffc600;
+		}
+		
+		.buynow{
+			visibility:hidden;
+			}
+		.mens-tshirt:hover .buynow{
+			visibility:visible;
+			width:240px;
+			line-height:35px;
+			background-color:#ffc600;
+			margin-top:-90px;
+			text-align:center;
+			position:absolute;
+			font-size:20px;
+			opacity:0.9;
+			}
+			
+	.mens-tshirt .off{
+		padding:5px;
+		border:2px solid #ffc600;
+		position:absolute;
+		margin-top:-15px;
+		color:#ffc600;
+		font-size:15px;
+		margin-left:82px;
+		}
+		
+	.viewall, .viewall2{
+		padding:10px 30px;
+		background-color:#ffc600;
+		position:absolute;
+		margin-top:1130px;
+		margin-left:855px;
+		color:#FFF;
+		font-size:18px;
+		}
+
+	.viewall2{
+		margin-top:2520px;
+		margin-left:985px;
+		}
+				
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+

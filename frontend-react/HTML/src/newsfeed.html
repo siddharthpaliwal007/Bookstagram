@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookstagram</title>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="./css/newsfeed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <article class="blog-card">
+          <div class ="blog-card_outline">
+          <span> <img src="images/profile/3.png" alt=" Profile image" style="width:20px;height:20px;">  User1 shared a post</span>
+          <div class="blog-card__info">            
+            <img src="images/img8.png" alt="Unfinished" width="200" height="300">
+            <a href="#" class="addtowishlist"><span>+ Add to Wish List</span></a>
+            <h5>Unfinished By Priyanka Chopra</h5>
+            <p>
+              <a href="#" class="icon-link mr-3"><i class="fa fa-pencil-square-o"></i> Priyanka’s ‘Unfinished’ is Measured, Engaging & Full of Humour</a>
+            </p>
+            <p>In spite of having been one of the most famous faces in the country, she didn’t resist doing multiple auditions or walking into the offices of media houses to introduce herself. In her memoir Unfinished, Chopra Jonas writes, “I swallowed my pride and reminded myself constantly that just because I’d received recognition in one part of the world was no reason that I should automatically receive it elsewhere”.
+
+                She writes about going for the Roc Nation pre-Grammys party only to realize that she wasn’t where all the A-listers were; the pep talk she gave herself in a toilet just before walking in to audition to play Alex Parrish in Quantico – which made her the first Indian-born woman to lead a prime-time network show in the United States; and, being a bundle of nerves before her first press event for the ABC show.
+                
+                </p>
+            <span> 
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up"> Like/Dislike</i>
+                <form class="comment-form" method="post" action=" ">
+                    Comments: <textarea name="comment"></textarea><br>
+                    <input name="submit" type="submit" value="submit"><br>
+                    <input name="reset" type="reset" value="reset">		
+                </form>
+
+            </span>
+           
+          </div>
+        </div>
+        </article>
+      </div>
+    </div>
+  </div>
+  
+  <section class="detail-page">
+    <div class="container mt-5">
+      
+    </div>
+  </section>
+
+  <script>
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
+    </script>
+</body>
